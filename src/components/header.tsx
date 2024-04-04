@@ -7,15 +7,21 @@ export default function Header() {
             <div className="flex items-center justify-between max-w-6xl mx-4 xl:mx-auto">
                 <div className="cursor-pointer h-24 w-24 relative hidden lg:inline-grid">
                     <Image 
-                        layout="fill"
-                        className="object-contain"
+                        width="0"
+                        height="0"
+                        sizes="100vw"
+                        className="object-contain w-full h-full"
+                        priority={true}
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1280px-Instagram_logo.svg.png" 
                         alt="instagram-logo"/>
                 </div>
                 <div className="cursor-pointer h-24 w-10 relative lg:hidden">
                     <Image 
-                        layout="fill"
-                        className="object-contain"
+                        width="0"
+                        height="0"
+                        sizes="100vw"
+                        className="object-contain w-full h-full"
+                        priority={false}
                         src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
                         alt="instagram-logo"/>
                 </div>
