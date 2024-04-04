@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { BeakerIcon } from "@heroicons/react/16/solid";
 
 export default function Header() {
     return (
@@ -16,6 +17,13 @@ export default function Header() {
                     className="object-contain"
                     src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
                     alt="instagram-logo"/>
+            </div>
+
+            <div className="relative mt-1">
+                <div className="absolute top-2 left-2">
+                    <BeakerIcon className="h-5 text-gray-500"/>
+                </div>
+                <input type="text" placeholder="Search" className="bg-gray-50 pl-10 border-gray-50 text-sm focus:ring-black focus:border-black rounded-md" />
             </div>
 
             <h1>Right Sides</h1>
