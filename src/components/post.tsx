@@ -1,4 +1,4 @@
-import { BanknotesIcon} from '@heroicons/react/20/solid'
+import { BanknotesIcon, TvIcon, CogIcon, EyeIcon } from '@heroicons/react/20/solid'
 export interface PostData {
     id: string,
     username: string,
@@ -17,6 +17,14 @@ export default function Post({post}: {post: PostData}) {
                 <BanknotesIcon className='h-5'/>
             </div>
             <img src={post.img} alt="img-post" className='object-cover w-full' />
+            
+            <div className='flex justify-between px-4'>
+                <div className='flex space-x-4'>
+                    <TvIcon className='btn'/>
+                    <CogIcon className='btn'/>
+                </div>
+                <EyeIcon className='btn' />
+            </div>
             <p>{post.caption}</p>
         </div>
     )
